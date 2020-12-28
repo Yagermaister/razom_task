@@ -65,3 +65,8 @@ traffic_radio_trp <- lm(Traffic ~ data$`Competitors 1...58` +
                               data$`Competitor 2` +
                               data$`Competitor 3`)
 print(summary(traffic_radio_trp))
+
+model <- lm(Traffic ~ Brand + `Brand Promo` +
+                  `Ukraine Ave OOH` + Holidays +
+                  `Exchange rate` + `Ave salary`)
+print(summary(model))
